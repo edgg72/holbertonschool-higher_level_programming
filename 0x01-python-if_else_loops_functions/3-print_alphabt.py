@@ -4,4 +4,3 @@ for i in range(ord('a'), ord('{')):
         continue
     else:
         print("{:s}".format(chr(i)), end="")
-
