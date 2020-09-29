@@ -32,6 +32,7 @@ class Rectangle:
             return rect_2
 
     @classmethod
+    """returns a ractangle that is actually a square"""
     def square(cls, size=0):
         return Rectangle(size, size)
 
