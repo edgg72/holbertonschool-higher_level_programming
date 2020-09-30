@@ -5,6 +5,7 @@
 
 
 def text_indentation(text):
+    """splits a text into lines"""
     if type(text) != str:
         raise TypeError("text must be a string")
     space_check = 0
