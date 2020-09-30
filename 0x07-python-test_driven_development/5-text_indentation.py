@@ -17,7 +17,6 @@ def text_indentation(text):
         if space_check == 1:
             if i is '.' or i is '?' or i is ':':
                 print(i)
-                print()
                 space_check = 0
             else:
                 print(i, end="")
