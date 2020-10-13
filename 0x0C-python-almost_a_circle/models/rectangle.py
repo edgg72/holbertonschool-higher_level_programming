@@ -119,6 +119,7 @@ class Rectangle(Base):
                                                                  self.__height)
 
     def to_dictionary(self):
+        """to dict"""
         dic_rec = {}
         dic_rec["id"] = self.id
         dic_rec["width"] = self.width
