@@ -3,7 +3,7 @@
 if (isNaN(process.argv[2]) || process.argv.length < 4) {
   console.log(0);
 } else {
-  let numList = [];
+  const numList = [];
   for (let i = 2; i < process.argv.length; i++) {
     numList.push(parseInt(process.argv[i]));
   }
