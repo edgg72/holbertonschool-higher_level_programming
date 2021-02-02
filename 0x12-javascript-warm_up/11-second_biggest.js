@@ -3,11 +3,15 @@
 if (isNaN(process.argv[2]) || process.argv.length < 4) {
   console.log(0);
 } else {
-  const maxNum = Math.max(process.argv);
-  let secMax = process.argv[2];
-  for (let i = 3; i < process.argv.length; i++) {
-    if (process.argv[i] > secMax && secMax < maxNum) {
-      secMax = process.argv[i];
+  let numList = [];
+  for (let i = 2; i < process.argv.length; i++) {
+    numList.push(parseInt(process.argv[i]));
+  }
+  const maxNum = Math.max(...numList);
+  let secMax = numList[0];
+  for (let i = 1; i < numList.length; i++) {
+    if (numList[i] > secMax && numList[i] < maxNum) {
+      secMax = numList[i];
     }
   }
   console.log(secMax);
