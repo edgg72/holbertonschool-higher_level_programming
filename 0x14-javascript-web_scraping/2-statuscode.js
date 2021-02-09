@@ -6,5 +6,5 @@ const req = request.get(process.argv[2]);
 
 request(req, function (error, response) {
   if (error) return console.log(error);
-  console.log('statusCode:', response.statusCode);
+  console.log('code:', response.statusCode);
 });
