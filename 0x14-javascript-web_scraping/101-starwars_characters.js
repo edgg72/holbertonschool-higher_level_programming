@@ -8,7 +8,7 @@ request(req, function (error, response, body) {
   if (error) return console.log(error);
   const characters = JSON.parse(body).characters;
   for (let i = 0; i < characters.length; i++) {
-    request(characters[i], function (error, response, body) {
+    request(characters[i], async function (error, response, body) {
       if (error) return console.log(error);
       console.log(JSON.parse(body).name);
     });
